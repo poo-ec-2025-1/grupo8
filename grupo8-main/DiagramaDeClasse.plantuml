@@ -1,0 +1,40 @@
+@startuml Classe dos Usuários comuns
+
+    class Usuarios{
+
+        + String classificacao
+        + String nome
+        + String cidade
+        + int telefone
+        + double qtdAtendimentos
+        + double avaliacao
+        + double saldo
+        + Integer getAvaliacao()
+        + Integer getSaldoDisponivel()
+    }
+
+    class Cabeleleira{
+
+        + String diasDisponiveis
+        + String mesDisponivel
+        + String trabalho
+        + double valor
+        + Integer AgendaDisponivel()
+        + Integer ValorLiquido()
+        + Integer getAvaliacao()
+        + Integer getSaldoDisponivel()
+    }
+
+    class Clientes{
+
+        + String diaAgendado;
+        + String mesAgendado;
+        + Integer getCompromisso()
+        + Integer getSaldoDisponivel()
+
+    }
+
+    Usuarios "*" --> "1" Cabeleleira : cabeleleira
+    Usuarios "*" --> "1" Clientes : clientes
+
+@enduml
