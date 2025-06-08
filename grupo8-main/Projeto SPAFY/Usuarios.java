@@ -1,5 +1,5 @@
 //Usuários gerais do app
-public class Usuarios{
+public abstract class Usuarios{
     public String classificacao;
     public String nome;
     public String cidade;
