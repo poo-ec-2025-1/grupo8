@@ -14,6 +14,9 @@ public abstract class Usuarios{
         this.telefone = telefone;
     }
 
+    // Classe abstrata
+    public abstract void agendar(int diaAgendamento, int mesAgendamento, double horario, String procedimento, String pessoa);
+
     //Nome
     public void setNome(String nome){
         this.nome = nome;
