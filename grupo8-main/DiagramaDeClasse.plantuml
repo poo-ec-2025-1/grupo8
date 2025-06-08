@@ -13,7 +13,7 @@
         + Integer getSaldoDisponivel()
     }
 
-    class Cabeleleira{
+    class Cabeleleiros{
 
         + String diasDisponiveis
         + String mesDisponivel
@@ -34,7 +34,13 @@
 
     }
 
-    Usuarios "*" --> "1" Cabeleleira : cabeleleira
+    class Funcionarios{
+
+        + String Servico
+    }
+
+    Usuarios "*" --> "1" Funcionarios : Funcionarios
     Usuarios "*" --> "1" Clientes : clientes
+    Funcionarios "*" -->  Cabeleleiros : Cabeleleiros
 
 @enduml
