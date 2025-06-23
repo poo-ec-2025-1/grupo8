@@ -1,12 +1,57 @@
-public class Cliente extends Usuarios{
-
-    public Cliente(String nome, String cidade, int telefone){
-        super(nome, cidade, telefone);
+public class Clientes extends Usuarios{
+    
+    //método abstrato
+    public Clientes(String nome, String dataDeNasc, int cpf, String categoria, 
+    String cidade){
+        this.nome = nome;
+        this.dataNasc = dataDeNasc;
+        this.cpf = cpf;
+        this.categoria = categoria;
+        this.cidade = cidade;
     }
-
-    //Método criado irá usar o nome do profissional e o nome da profissão do profissional
-    public void agendar(int diaAgendamento, int mesAgendamento, double horario, String procedimento, String pessoa){
-        Agendamento data = new Agendamentos(diaAgendamento, mesAgendamento, horario, procedimento, pessoa);
+    //método herdado
+    @Override
+    public void cadastrar(){
+        System.out.println("CADASTRO REALIZADO COM SUCESSO!");
+        //super.cadastrar();
+        
     }
-
+    //métodos da classe
+    public void pesquisarCidade(){
+    
+    }
+    public void pesquisarServicos() {
+       //System.out.println("LISTA DE PROFISSIONAIS:" +
+    }
+    public void escolherProfissional(){
+        
+    }
+    public void verificarAgenda(){
+        
+    }
+    public void escolherData(){
+        
+    }
+    public void escolherHorario(){
+        
+    }
+    public void confirmarAgendamento(){
+        
+    }
+    public void realizarPagamento(){
+        
+    }
+    public void depositar(){
+        
+    }
+    public void verificarSaldo(){
+        
+    }
+    public void conversarComProfissional(){
+        
+    }
+    public void solicitarCancelamento(){
+        
+    }
+    //métodos especiais declarados na classe abstrata
 }
