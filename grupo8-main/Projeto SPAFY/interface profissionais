@@ -1,0 +1,13 @@
+public interface PagProfissionais{
+    //public abstract void cadastrarProfissional();
+    public abstract void cadastrarServicos(String s);
+    public abstract void verificarAgenda();
+    public abstract void editarPerfil();
+    public abstract void cancelarAtendimento();
+    public abstract void realizarCheckIn();
+    public abstract void realizarCheckOut();
+    public abstract void receberPagamento();
+    public abstract void verificarCarteira();
+    public abstract void sacar();
+    public abstract void avaliarCliente();
+}
