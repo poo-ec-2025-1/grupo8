@@ -1,70 +1,67 @@
-//Usuários gerais do app
-public abstract class Usuarios{
-    public String classificacao;
-    public String nome;
-    public String cidade;
-    public int telefone;
-    public int qtdAtendimentos = 0;
-    public double avaliacao;
-    public double saldo;
-
-    public Usuarios(String nome, String cidade, int telefone){
-        this.nome = nome;
-        this.cidade = cidade;
-        this.telefone = telefone;
+ public abstract class Usuarios{
+    protected String nome;
+    protected String dataNasc; //data de nascimento
+    protected int cpf;
+    protected String categoria;
+    protected String usuario; //cpf
+    protected String senha;
+    protected String cidadeAtend;
+    protected float saldo;
+    protected float avaliacao;
+    public abstract void novoUsuario(String nome, String dataNasc, int cpf, String categoria, String senha);
+    public abstract void cadastrarUsuario();
+    public String getNome(){
+        return this.nome;
     }
-
-    // Classe abstrata
-    public abstract void agendar(int diaAgendamento, int mesAgendamento, double horario, String procedimento, String pessoa);
-
-    //Nome
     public void setNome(String nome){
         this.nome = nome;
     }
-
-    public String getNome(){
-        return (nome);
+    public String getDataNasc(){
+        return this.dataNasc;
     }
-
-    //cidade
-    public void setCidade(String nome){
-        this.cidade = nome;
+    public void setDataNasc(String data){
+        this.dataNasc = data;
     }
-
-    public String getCidade(){
-        return (this.cidade);
+    public int getCpf(){
+        return this.cpf;
     }
-
-    //Telefone
-    public void setTelefone(int numero){
-        this.telefone = numero;
+    public void setCpf(int cpf){
+        this.cpf = cpf;
     }
-
-    public int getTelefone(){
-        return (this.telefone);
+    public String getCategoria(){
+        return this.categoria;
     }
-
-    //Avaliações e atendimentos
-    public void adicionarAtendimentos(){
-        this.qtdAtendimentos++;
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
     }
-
-    public double getAvaliacao(){
-        return (avaliacao);
+    public String getUsuario(){
+        return this.usuario;
     }
-
-    public void setAvaliacao(double nota){
-        this.avaliacao += nota;
+    public void setUsuario(String usuario){
+        this.usuario = usuario;
     }
-
-    //Calcular a média das avaliações
-
-    public double mediaAvaliacao(){
-        return this.avaliacao/this.qtdAtendimentos;
+    protected String getSenha(){
+        return this.senha;
     }
-
-    //método para retornar o valor disponível para saque/estorno na carteira do app
-    public double getSaldoDisponivel(){
-        return (this.saldo - (this.saldo *0.03)); //3% de taxa para saque ou estornos no app
+    protected void setSenha(String senha){
+        this.senha = senha;
+    }
+    public String getCidadeAtend(){
+        return this.cidadeAtend;
+    }
+    public void setCidadeAtend(String cidade){
+        this.cidadeAtend = cidade;
+    }
+    public float getSaldo(){
+        return this.saldo;
+    }
+    public void setSaldo(float saldo){
+        this.saldo = saldo;
+    }
+    public float getAvaliacao(){
+        return this.avaliacao;
+    }
+    public void setAvaliacao(float avaliacao){
+        this.avaliacao = avaliacao;
     }
 }
