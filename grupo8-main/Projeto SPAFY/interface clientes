@@ -1,15 +1,1 @@
-public interface PagClientes{
-    //public abstract void cadastrarCliente();
-    public abstract void realizarNovoAgendamento(String s);
-    public abstract void pesquisarCidade(String c);
-    public abstract void pesquisarServico(String sc);
-    public abstract void selecionarProfissional(int codigo);
-    public abstract void verificarAgenda();
-    public abstract void escolherData();
-    public abstract void escolherHorario();
-    public abstract void escolherPagamento();
-    public abstract void depositar();
-    public abstract void confirmarAgendamento();
-    public abstract void realizarCheckIn();
-    public abstract void realizarCheckOut();
-}
+
