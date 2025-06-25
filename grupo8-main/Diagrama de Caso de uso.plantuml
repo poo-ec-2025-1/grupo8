@@ -1,30 +1,29 @@
-@startuml Uso para clientes
-
+@startuml
 left to right direction
-actor Clientes
-actor Profissional
-rectangle "Executar ação" { 
- usecase "serviços" as UC1
- usecase "Avaliar serviços já prestados" as UC2
- usecase "Fazer reclamação" as UC3
- usecase "alterar perfil" as UC4
- usecase "Pés e unhas" as UC5
- usecase "Cabelos" as UC6
- usecase "pele" as UC7
- usecase "Maquiagem" as UC8
- usecase "Prestar serviço" as UC9
- usecase "procurar serviços" as UC10
-}
-Profissional --> UC9
-Clientes --> UC2
-Clientes --> UC3
-Clientes --> UC4
-Clientes --> UC10
-UC10 --> UC1
-UC1 --> UC5
-UC1 --> UC6
-UC1 --> UC7
-UC1 --> UC8
-UC9 --> UC1
 
+actor Cliente
+actor Profissional
+rectangle "Spafy"{
+usecase "Realizar login" as UC1
+usecase "Cadasrar cliente" as UC2
+usecase "Pesquisar servicos disponiveis" as UC3
+usecase "Agendar servico" as UC4
+usecase "Avaliar Profissional" as UC5
+usecase "Cadastrar Profissional" as UC6
+usecase "Verificar Agenda" as UC7
+usecase "Realizar saque" as UC8
+usecase "Avliar cliente" as UC9
+usecase "Editar perfil" as UC10
+}
+Cliente --> UC1
+Cliente --> UC2
+Cliente --> UC3
+Cliente --> UC4
+Cliente --> UC5
+
+Profissional --> UC1
+Profissional --> UC7
+Profissional --> UC8
+Profissional --> UC9
+Profissional --> UC10
 @enduml
