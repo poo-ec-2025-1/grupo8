@@ -7,9 +7,7 @@
     protected String senha;
     protected String cidadeAtend;
     protected float saldo;
-    protected float avaliacao;
-    public abstract void novoUsuario(String nome, String dataNasc, int cpf, String categoria, String senha);
-    public abstract void cadastrarUsuario();
+
     public String getNome(){
         return this.nome;
     }
@@ -58,10 +56,5 @@
     public void setSaldo(float saldo){
         this.saldo = saldo;
     }
-    public float getAvaliacao(){
-        return this.avaliacao;
-    }
-    public void setAvaliacao(float avaliacao){
-        this.avaliacao = avaliacao;
-    }
+    
 }
