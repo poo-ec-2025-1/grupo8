@@ -1,4 +1,13 @@
 public class Profissionais extends Usuarios{
+    protected String nome;
+    protected String dataNasc; //data de nascimento
+    protected int cpf;
+    protected String categoria;
+    protected String usuario; //cpf
+    protected String senha;
+    protected String cidadeAtend;
+    protected float saldo;
+    protected float avaliacao;
     public String servicos;
     public float valor;
     public String endereco;
@@ -7,21 +16,17 @@ public class Profissionais extends Usuarios{
     public String horariosDispon; //horarios disponiveis
     public String datasAgend; //datas não disponíveis
     public String horariosAgend;//horarios não disponíveis
-    public float avaliacao;
     public int qntAtend;
-    public float saldo;
 
-    @Override
-    public void novoUsuario(String nome, String dataNasc, int cpf, String categoria, String senha){
+    public Profissionais (String nome, String dataNasc, int cpf, String categoria, String senha){
         this.nome = nome;
         this.dataNasc = dataNasc;
         this.cpf = cpf;
         this.categoria = categoria;
         this.senha = senha;
     }
-    @Override
-    public void cadastrarUsuario(){
-        System.out.println("CADASTRO REALIZADO COM SUCESSO!");
+    public void cadastrarProfissional(){
+        System.out.println("PROFISSIONAL CADASTRADO!");
         System.out.println("NOME: "+getNome());
         System.out.println("DATA DE NASCIMENTO: "+getDataNasc());
         System.out.println("CPF/USUÁRIO: "+getCpf());
@@ -35,15 +40,29 @@ public class Profissionais extends Usuarios{
     public void cadastrarServicos(String s){
         this.servicos = s;
         System.out.println("Servico cadastrado com sucesso!");
+    
     }
     public void verificarAgenda(){
         System.out.println("Agendamento para o dia: "+getDatasAgend()+"Às "+getHorariosAgend()+"horas");
+
     }
-    public void editarPerfil(){
-            
-    }
-    //criar uma classe public void cancelarAtendimento(){}
+    public void editarPerfil(){}
+    public class cancelarAtendimento{
+        public Agendamento ag;
+        
+        public cancelarAtendimento(Agendamento ag){
+            this.ag = ag;
+            System.out.println(getAg()+"Agendamento cancelado");
+        }
+        public Agendamento getAg(){
+                return this.ag;
+        }
+        public void setAg(Agendamento ag){
+                this.ag = ag;
+        }
+        }
     
+    //criar uma classe public void cancelarAtendimento(){}
     public void realizarCheckIn(){
         System.out.println("Check-in realizado com sucesso!");
     }
@@ -51,9 +70,6 @@ public class Profissionais extends Usuarios{
         System.out.println("Check-out realizado com sucesso!");
         setQntAtend(getQntAtend()+1);
     }
-    
-    //criar classe public void receberPagamento(){}
-    
     public void verificarCarteira(){
         System.out.println("SALDO: "+getSaldo());
     }
@@ -67,7 +83,18 @@ public class Profissionais extends Usuarios{
         }
     }
     //criar classe public void avaliarCliente(){}
-    
+    public class AvaliarCliente{
+        public Profissionais profissional;
+        public Clientes cliente;
+        public float nota;
+        
+        public AvaliarCliente(Profissionais p, Clientes c, float n){
+            this.profissional = p;
+            this.cliente = c;
+            this.nota = n;
+            float notaCliente= n;
+        }
+    }
     
     //métodos especiais
     public String getServicos(){
@@ -136,4 +163,47 @@ public class Profissionais extends Usuarios{
     public void setSaldo(float s){
         this.saldo = s;
     }
+    public String getNome(){
+        return this.nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public String getDataNasc(){
+        return this.dataNasc;
+    }
+    public void setDataNasc(String data){
+        this.dataNasc = data;
+    }
+    public int getCpf(){
+        return this.cpf;
+    }
+    public void setCpf(int cpf){
+        this.cpf = cpf;
+    }
+    public String getCategoria(){
+        return this.categoria;
+    }
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
+    }
+    public String getUsuario(){
+        return this.usuario;
+    }
+    public void setUsuario(String usuario){
+        this.usuario = usuario;
+    }
+    protected String getSenha(){
+        return this.senha;
+    }
+    protected void setSenha(String senha){
+        this.senha = senha;
+    }
+    public String getCidadeAtend(){
+        return this.cidadeAtend;
+    }
+    public void setCidadeAtend(String cidade){
+        this.cidadeAtend = cidade;
+    }
+    
 }
