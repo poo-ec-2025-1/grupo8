@@ -1,46 +1,32 @@
-@startuml Classe dos Usuários comuns
+@startuml
+title Diagrama de Classes – Sistema de agendamento 
+left to right direction
 
-    class Usuarios{
+' Classes principais
+class Clientes {
+    - usuario: String
+    - nome: String
+    + realizarAgendamento(d: profissional): String
+}
 
-        + String classificacao
-        + String nome
-        + String cidade
-        + int telefone
-        + double qtdAtendimentos
-        + double avaliacao
-        + double saldo
-        + Integer getAvaliacao()
-        + Integer getSaldoDisponivel()
-    }
+class Profissional{
+    - usuario: String
+    - nome: String
+    - servico: int
+    - dataDispon: int
+    - horariosDispon: float
+    + verificarDisponibilidade(): bool
+}
 
-    class Cabeleleiros{
+class Agendar{
+    - dataDispon: int
+    - horarioDispon: float
+    - status: String
+    - cliente: Cliente
+    - profissional: Profissional
+}
 
-        + String diasDisponiveis
-        + String mesDisponivel
-        + String trabalho
-        + double valor
-        + Integer AgendaDisponivel()
-        + Integer ValorLiquido()
-        + Integer getAvaliacao()
-        + Integer getSaldoDisponivel()
-    }
-
-    class Clientes{
-
-        + String diaAgendado;
-        + String mesAgendado;
-        + Integer getCompromisso()
-        + Integer getSaldoDisponivel()
-
-    }
-
-    class Funcionarios{
-
-        + String Servico
-    }
-
-    Usuarios "*" --> "1" Funcionarios : Funcionarios
-    Usuarios "*" --> "1" Clientes : clientes
-    Funcionarios "*" -->  Cabeleleiros : Cabeleleiros
-
+' Relações estruturais
+Agendar"*" --> "1" Clientes: cliente
+Agendar"*" --> "1" Profissional: profissional
 @enduml
