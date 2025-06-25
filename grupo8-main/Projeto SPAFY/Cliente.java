@@ -1,55 +1,53 @@
-public class Clientes extends Usuarios implements PagClientes{
-    //protected String nome;
-    //protected String dataNasc; //data de nascimento
-    //protected int cpf;
-    //protected String categoria;
-    //protected String usuario; //cpf
-    //protected String senha;
-    //protected String cidadeAtend;
-    //protected float saldo;
-    //protected float avaliacao;
+public class Clientes extends Usuarios{
+    protected String nome;
+    protected String dataNasc; //data de nascimento
+    protected int cpf;
+    protected String categoria;
+    protected String usuario; //cpf
+    protected String senha;
+    protected String cidadeAtend;
+    protected float saldo;
+    protected float avaliacao;
     public String agendar;
     public String servicoSolic;
     public Profissionais profissional;
     public int qntAtendimento;
-    @Override
-    public void novoUsuario(String nome, String dataNasc, int cpf, 
+    public float avaliacaoCliente;
+    public float notaCliente;
+    //construtor
+    public Clientes(String nome,  String data, int cpf,
     String categoria, String senha){
         this.nome = nome;
-        this.dataNasc = dataNasc;
+        this.dataNasc = data;
         this.cpf = cpf;
         this.categoria = categoria;
         this.senha = senha;
     }
-    @Override
-    public void cadastrarUsuario(){
-        System.out.println("CADASTRO REALIZADO COM SUCESSO!");
+    public void cadastrarCliente(){
+        System.out.println("CLIENTE CADASTRADO!");
         System.out.println("NOME: "+getNome());
         System.out.println("DATA DE NASCIMENTO: "+getDataNasc());
         System.out.println("CPF/USUÁRIO: "+getCpf());
     }
     //métodos da classe
-    @Override
-    public void realizarNovoAgendamento(String s){
+        public void realizarNovoAgendamento(String s){
         System.out.println("Gostaria de realizar um novo agendamento?");
         this.agendar = s;
-        if (this.agendar == "SIM"){
+              if (this.agendar == "SIM"){
             System.out.println("Informe a cidade onde gostaria de ser atendido(a)");
+        }}
+    
+        public void pesquisarCidade(String c){
+            this.cidadeAtend = c;
+            System.out.println("Pesquise o serviço da sua preferência");
         }
-    }
-    @Override
-    public void pesquisarCidade(String c){
-        this.cidadeAtend = c;
-        System.out.println("Pesquise o serviço da sua preferência");
-    }
-    @Override
-    public void pesquisarServico(String sc){
+        public void pesquisarServico(String sc){
         this.servicoSolic = sc;
         System.out.println("Seguem os profissionais em "+getCidadeAtend()+
         " que realizam o atendimento de "+getServicoSolic());
         System.out.println("LISTA DE PROFISSIONAIS"); //LISTA A SER CRIADA
         }
-    public void apresentarProfissional(Profissionais profissional){
+        public void apresentarProfissional(Profissionais profissional){
         this.profissional = profissional;
         //apresentarProf();
         //System.out.println(" "+getNome());
@@ -58,39 +56,30 @@ public class Clientes extends Usuarios implements PagClientes{
         //System.out.println("Endereço: "+getEndereco());
         
     }
-    @Override
     public void selecionarProfissional(int codigo){
         System.out.println("Escolha o profissional desejado");
         //System.out.println(+apresentarProfissional());
     }
-    @Override
     public void verificarAgenda(){}
-    @Override
     public void escolherData(){}
-    @Override
     public void escolherHorario(){}
-    @Override
     public void escolherPagamento(){}
-    @Override
     public void depositar(){}
-    @Override
     public void confirmarAgendamento(){}
-    @Override
     public void realizarCheckIn(){
         System.out.println("Check-in realizado com sucesso!");
     }
-    @Override
     public void realizarCheckOut(){
         System.out.println("Check-out realizado com sucesso!");
         setQntAtendimento(getQntAtendimento()+1);
         System.out.println("Por favor, avalie o atendimento");
     }
     //classe para realizar a avaliação do profissional
-    public class avaliarProfissional{
+    public class AvaliarProfissional extends Clientes{
         public Profissionais profissional;
         public float nota;
         
-        public void avaliarProfissional(Profissionais prof, float n){
+        public void AvaliarProfissional(Profissionais prof, float n){
             this.profissional = prof;
             this.nota = n;
         }
@@ -124,5 +113,65 @@ public class Clientes extends Usuarios implements PagClientes{
     }
     public void setQntAtendimento(int qntAtendimento){
         this.qntAtendimento = qntAtendimento;
+    }
+    public float getAvaliacaoCliente(){
+        return this.avaliacaoCliente;
+    }
+    public void setAvaliacaoCliente(float f){
+        this.avaliacaoCliente = f;
+    }
+    public float getNotaCliente(){
+        return this.notaCliente;
+    }
+    public void setNotaCliente(float f){
+        this.avaliacaoCliente +=this.notaCliente/qntAtendimento;
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public String getDataNasc(){
+        return this.dataNasc;
+    }
+    public void setDataNasc(String data){
+        this.dataNasc = data;
+    }
+    public int getCpf(){
+        return this.cpf;
+    }
+    public void setCpf(int cpf){
+        this.cpf = cpf;
+    }
+    public String getCategoria(){
+        return this.categoria;
+    }
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
+    }
+    public String getUsuario(){
+        return this.usuario;
+    }
+    public void setUsuario(String usuario){
+        this.usuario = usuario;
+    }
+    protected String getSenha(){
+        return this.senha;
+    }
+    protected void setSenha(String senha){
+        this.senha = senha;
+    }
+    public String getCidadeAtend(){
+        return this.cidadeAtend;
+    }
+    public void setCidadeAtend(String cidade){
+        this.cidadeAtend = cidade;
+    }
+    public float getSaldo(){
+        return this.saldo;
+    }
+    public void setSaldo(float saldo){
+        this.saldo = saldo;
     }}
     
