@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="83e0f00b-0b88-4ca7-a6de-a64b551f4ec6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Acoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Acoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Agendamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Agendamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Cabeleleiros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Cabeleleiros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Dados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Dados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Manicures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Manicures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Maquiadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Maquiadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Profissionais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Profissionais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="MavenRunConfiguration" name="Spafy [javafx:run]" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2yzz9HzsjVdUw13oSoWuqohMrT3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Javafx.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven.Spafy [javafx:run].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/grupo8/grupo8-main/src/media&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/pedro/IdeaProjects/Spafy/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pedro\grupo8\grupo8-main\src\media" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pedro\IdeaProjects\Spafy\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.Spafy [javafx:run]">
+    <configuration name="Javafx" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Spafy" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\pedro\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scene Builder&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spafy [javafx:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Javafx" />
+      <item itemvalue="Maven.Spafy [javafx:run]" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83e0f00b-0b88-4ca7-a6de-a64b551f4ec6" name="Changes" comment="" />
+      <created>1750852040556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750852040556</updated>
+      <workItem from="1750852041856" duration="9738000" />
+      <workItem from="1750861812735" duration="924000" />
+      <workItem from="1751162774184" duration="2599000" />
+      <workItem from="1751165423453" duration="332000" />
+      <workItem from="1751165777464" duration="1776000" />
+      <workItem from="1751167602349" duration="25516000" />
+      <workItem from="1751211629711" duration="1771000" />
+      <workItem from="1751330058809" duration="1267000" />
+      <workItem from="1751369092272" duration="9171000" />
+      <workItem from="1751568714867" duration="19428000" />
+      <workItem from="1751665748458" duration="8605000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
