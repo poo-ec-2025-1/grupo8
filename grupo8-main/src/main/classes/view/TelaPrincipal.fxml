@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Classes.TelaDeAcesso">
+   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: purple;">
+      <children>
+       <Button id="cadastrar" fx:id="cadastrar" contentDisplay="CENTER" layoutX="67.0" layoutY="75.0" mnemonicParsing="false" onAction="#CadastrarUsuario" text="Cadastrar" />
+       <Button fx:id="entrar" layoutX="74.0" layoutY="118.0" mnemonicParsing="false" onAction="#acessarConta" prefHeight="25.0" prefWidth="53.0" text="Entrar" />
+      </children>
+   </Pane>
+</StackPane>

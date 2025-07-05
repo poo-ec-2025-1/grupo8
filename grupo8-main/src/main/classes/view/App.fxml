@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0"
+      prefWidth="600.0"
+      style="-fx-background-color: purple;"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Classes.Acoes">
+
+   <children>
+      <Hyperlink id="pesquisar"
+                 onAction="#pesquisar"
+                 layoutX="33.0"
+                 layoutY="194.0"
+                 style="-fx-text-fill: white;"
+                 styleClass="link"
+                 text="Pesquisar Serviços"
+                 textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink id="avaliar"
+                 layoutX="33.0"
+                 layoutY="164.0"
+                 style="-fx-text-fill: white;"
+                 styleClass="link"
+                 text="Avaliar serviços anteriores"
+                 textFill="WHITE">
+
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+
+      </Hyperlink>
+
+      <Hyperlink layoutX="441.0"
+                 layoutY="363.0"
+                 style="-fx-text-fill: white;"
+                 styleClass="link"
+                 text="Se tornar um colaborador"
+                 textFill="#838383">
+
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+
+      </Hyperlink>
+      <Label alignment="CENTER"
+             layoutX="10.0" layoutY="14.0"
+             prefHeight="89.0" prefWidth="156.0"
+             style="-fx-background-color: \\media;"
+             text="SPAFY" textAlignment="CENTER"
+             textFill="WHITE">
+
+         <font>
+            <Font name="Impact" size="48.0" />
+         </font>
+
+      </Label>
+
+      <ImageView fitHeight="44.0"
+                 fitWidth="47.0"
+                 layoutX="513.0"
+                 layoutY="37.0"
+                 pickOnBounds="true"
+                 preserveRatio="true">
+
+         <image>
+            <Image url="@../../../src/media/pngegg%20(2).png" />
+         </image>
+
+      </ImageView>
+      <Label alignment="CENTER"
+             layoutX="503.0"
+             layoutY="95.0"
+             prefHeight="17.0"
+             prefWidth="65.0"
+             text="user name"
+             textFill="WHITE" />
+   </children>
+</Pane>
