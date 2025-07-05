@@ -1,14 +1,26 @@
 package Classes;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
+@DatabaseTable(tableName = "Clientes")
 public class Clientes extends Usuarios{
+
+    @DatabaseField
     protected String nome;
+
+    @DatabaseField
     protected String dataNasc; //data de nascimento
-    protected int cpf;
-    protected String categoria;
-    protected String usuario; //cpf
+
+    //Chave primária
+    @DatabaseField(id = true)
+    protected String cpf;
+
+    @DatabaseField//cpf
     protected String senha;
-    protected String cidadeAtend;
-    protected float saldo;
+
+    protected String categoria;
+    protected String usuario;
     protected float avaliacao;
     public String agendar;
     public String servicoSolic;
@@ -16,14 +28,23 @@ public class Clientes extends Usuarios{
     public int qntAtendimento;
     public float avaliacaoCliente;
     public float notaCliente;
+    protected String cidadeAtend;
+    protected float saldo;
+
+
     //construtor
-    public Clientes(String nome,  String data, int cpf, String categoria, String senha){
+    public Clientes(String nome,  String data, String cpf, String categoria, String senha){
         this.nome = nome;
         this.dataNasc = data;
         this.cpf = cpf;
         this.categoria = categoria;
         this.senha = senha;
     }
+
+    //constructor vazio
+    public Clientes() {
+    }
+
     public void cadastrarCliente(){
         System.out.println("CLIENTE CADASTRADO!");
         System.out.println("NOME: "+getNome());
@@ -139,12 +160,8 @@ public class Clientes extends Usuarios{
     public void setDataNasc(String data){
         this.dataNasc = data;
     }
-    public int getCpf(){
-        return this.cpf;
-    }
-    public void setCpf(int cpf){
-        this.cpf = cpf;
-    }
+    public void setCpf(String cpf){this.cpf = cpf;}
+    public String getCpf(){return this.cpf;}
     public String getCategoria(){
         return this.categoria;
     }

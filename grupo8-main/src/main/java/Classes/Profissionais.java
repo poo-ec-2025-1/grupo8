@@ -1,17 +1,36 @@
 package Classes;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
+@DatabaseTable(tableName = "Profissionais")
 public class Profissionais extends Usuarios{
+
+    @DatabaseField
     protected String nome;
-    protected String dataNasc; //data de nascimento
-    protected int cpf;
+
+    @DatabaseField
+    protected String dataNasc;
+
+    @DatabaseField (id = true)
+    protected String cpf;
+
+    @DatabaseField
     protected String categoria;
-    protected String usuario; //cpf
+
+    @DatabaseField
     protected String senha;
+
+    @DatabaseField
+    protected double avaliacao;
+
     protected String cidadeAtend;
     protected float saldo;
-    protected float avaliacao;
     public String servicos;
-    public float valor;
+
+    @DatabaseField
+    public double valor;
+
     public String endereco;
     public String biografia;
     public String datasDispon; //datas disponiveis
@@ -20,13 +39,19 @@ public class Profissionais extends Usuarios{
     public String horariosAgend;//horarios não disponíveis
     public int qntAtend;
 
-    public Profissionais (String nome, String dataNasc, int cpf, String categoria, String senha){
+    public Profissionais (String nome, String dataNasc, String cpf, String categoria, String senha, double avaliacao, double valor){
         this.nome = nome;
         this.dataNasc = dataNasc;
         this.cpf = cpf;
         this.categoria = categoria;
         this.senha = senha;
+        this.avaliacao = avaliacao;
+        this.valor = valor;
     }
+
+    public Profissionais(){
+    }
+
     public void cadastrarProfissional(){
         System.out.println("PROFISSIONAL CADASTRADO!");
         System.out.println("NOME: "+getNome());
@@ -105,7 +130,7 @@ public class Profissionais extends Usuarios{
     public void setServicos(String servicos){
         this.servicos = servicos;
     }
-    public float getValor(){
+    public double getValor(){
         return this.valor;
     }
     public void setValor(float v){
@@ -147,7 +172,7 @@ public class Profissionais extends Usuarios{
     public void setHorariosAgend(String horariosAgend){
         this.horariosAgend = horariosAgend;
     }
-    public float getAvaliacao(){
+    public double getAvaliacao(){
         return this.avaliacao;
     }
     public void setAvaliacao(float n){
@@ -177,10 +202,10 @@ public class Profissionais extends Usuarios{
     public void setDataNasc(String data){
         this.dataNasc = data;
     }
-    public int getCpf(){
+    public String getCpf(){
         return this.cpf;
     }
-    public void setCpf(int cpf){
+    public void setCpf(String cpf){
         this.cpf = cpf;
     }
     public String getCategoria(){
@@ -188,12 +213,6 @@ public class Profissionais extends Usuarios{
     }
     public void setCategoria(String categoria){
         this.categoria = categoria;
-    }
-    public String getUsuario(){
-        return this.usuario;
-    }
-    public void setUsuario(String usuario){
-        this.usuario = usuario;
     }
     protected String getSenha(){
         return this.senha;

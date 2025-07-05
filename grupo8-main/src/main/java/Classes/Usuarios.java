@@ -1,11 +1,13 @@
 package Classes;
 
+
 public abstract class Usuarios{
+
+
     protected String nome;
     protected String dataNasc; //data de nascimento
-    protected int cpf;
+    protected String cpf;
     protected String categoria;
-    protected String usuario; //cpf
     protected String senha;
     protected String cidadeAtend;
     protected float saldo;
@@ -22,10 +24,10 @@ public abstract class Usuarios{
     public void setDataNasc(String data){
         this.dataNasc = data;
     }
-    public int getCpf(){
+    public String getCpf(){
         return this.cpf;
     }
-    public void setCpf(int cpf){
+    public void setCpf(String cpf){
         this.cpf = cpf;
     }
     public String getCategoria(){
@@ -33,12 +35,6 @@ public abstract class Usuarios{
     }
     public void setCategoria(String categoria){
         this.categoria = categoria;
-    }
-    public String getUsuario(){
-        return this.usuario;
-    }
-    public void setUsuario(String usuario){
-        this.usuario = usuario;
     }
     protected String getSenha(){
         return this.senha;
