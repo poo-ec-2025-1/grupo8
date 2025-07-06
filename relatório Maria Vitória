@@ -1,0 +1,25 @@
+ Relatório Individual — Maria Vitória
+A ideia do Spafy surgiu com a vontade genuína de desenvolver algo que pudesse ser aplicado na vida real. Ao observar tendências do mundo atual, percebi o quanto unir tecnologia com o mercado da estética poderia fazer diferença — tanto pela praticidade que o digital oferece, quanto pelo crescimento constante da busca por bem-estar e autocuidado.
+Desde o início, me envolvi profundamente em todas as etapas do projeto. Contribuí com a criação do escopo — definindo o que seria o sistema, qual seria seu objetivo, quem o utilizaria e como se daria sua estrutura geral. Tentei trazer o máximo de dedicação e conhecimento técnico para que o projeto fosse além de uma entrega acadêmica: que fosse uma solução viável, coerente e bem pensada.
+ Minha participação no projeto:
+Criação de todos os códigos-fonte em Java, aplicando os conceitos da programação orientada a objetos com riqueza de detalhes.
+
+
+Utilizei os princípios de herança, polimorfismo, encapsulamento e abstração, buscando sempre manter a coerência entre lógica, estrutura e clareza de uso.
+
+
+Desenvolvi as classes principais do sistema, como Usuarios, Clientes, Profissionais, Servicos, Agendamento e Avaliacao, implementando métodos e relacionamentos entre elas.
+
+
+Fui responsável pela criação e atualização dos diagramas UML, ajustando os relacionamentos e atributos conforme o código era refinado. Contando com a colaboração do Davi nessa parte, mantive os diagramas sempre alinhados à implementação real.
+
+
+Também participei da organização das ideias, da divisão de tarefas e do acompanhamento do progresso do grupo.
+
+
+O desenvolvimento desse projeto me ajudou a fortalecer meus conhecimentos em programação orientada a objetos, principalmente na criação de classes funcionais, na lógica de relacionamento entre elas e na aplicação prática de tudo o que vimos em aula. Trabalhar com algo que faz sentido fora da sala também tornou o processo mais envolvente e significativo.
+Fiz o upload de todos os códigos no github, códigos fontes e diagramas UML que podem ser acessados, foram escritos por mim, com exceção da classe Clientes que foi modificada pelo Pedro Henrique para adaptá-la ao código em javafx. 
+ESTRUTURAÇÃO GERAL 
+
+
+
