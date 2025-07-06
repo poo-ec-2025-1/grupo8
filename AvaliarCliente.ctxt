@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=AvaliarCliente
+comment1.params=p\ c\ n\ comentario
+comment1.target=AvaliarCliente(Profissionais,\ Clientes,\ float,\ java.lang.String)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=Profissionais\ getProfissional()
+comment3.params=profissional
+comment3.target=void\ setProfissional(Profissionais)
+comment4.params=
+comment4.target=Clientes\ getCliente()
+comment5.params=cliente
+comment5.target=void\ setCliente(Clientes)
+comment6.params=
+comment6.target=float\ getNota()
+comment7.params=nota
+comment7.target=void\ setNota(float)
+comment8.params=
+comment8.target=java.lang.String\ getComentario()
+comment9.params=comentario
+comment9.target=void\ setComentario(java.lang.String)
+numComments=11

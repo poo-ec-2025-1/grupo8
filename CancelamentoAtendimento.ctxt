@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CancelamentoAtendimento
+comment1.params=ag
+comment1.target=CancelamentoAtendimento(Agendamento)
+comment2.params=ag\ motivo
+comment2.target=CancelamentoAtendimento(Agendamento,\ java.lang.String)
+comment3.params=
+comment3.target=Agendamento\ getAgendamento()
+comment4.params=ag
+comment4.target=void\ setAgendamento(Agendamento)
+comment5.params=
+comment5.target=java.lang.String\ getMotivoCancelamento()
+comment6.params=motivoCancelamento
+comment6.target=void\ setMotivoCancelamento(java.lang.String)
+numComments=7
